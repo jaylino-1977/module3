@@ -1,19 +1,5 @@
 @import './vendor/normalize';
 @import './partials/colors';
 @import './partials/mixins';
+@import './partials/all';
 
-
-.container {
-    background-color: yellow;
-}
-@media (min-width: 1024px) {
-   .container {
-       background-color: navy;
-   }
-}
-
-@media (min-width: 768px) {
-    .container {
-        background-color: tomato
-    }
- }

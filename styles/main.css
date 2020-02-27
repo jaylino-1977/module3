@@ -341,19 +341,15 @@ template {
   display: none;
 }
 
-.container {
-  background-color: yellow;
+nav, .subscribeBox {
+  background-color: #F8EEDD;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    background-color: navy;
-  }
+.buttoncolor {
+  background-color: #FDC079;
 }
 
-@media (min-width: 768px) {
-  .container {
-    background-color: tomato;
-  }
+h1, h3, p, .suscribebutton {
+  color: #19929A;
 }
 /*# sourceMappingURL=main.css.map */
