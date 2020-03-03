@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -345,11 +346,29 @@ nav, .subscribeBox {
   background-color: #F8EEDD;
 }
 
-.buttoncolor {
+.HeroButton, .sendbutton {
+  background-color: #19929A;
+}
+
+.selectionbutton, .divider {
   background-color: #FDC079;
 }
 
-h1, h3, p, .suscribebutton {
+h1 {
+  font-family: "Roboto", sans-serif;
   color: #19929A;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #19929A;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #19929A;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=main.css.map */

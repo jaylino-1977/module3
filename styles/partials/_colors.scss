@@ -1,11 +1,16 @@
+$primary_color: #F8EEDD;
+$secondary_color:  #19929A;
+$tertiary_color:  #FDC079;
 
 
 nav, .subscribeBox { 
-    background-color: #F8EEDD;
+    background-color: $primary_color;
 }
-.buttoncolor {
-    background-color: #FDC079;
+.HeroButton, .sendbutton {
+    @include button_style($secondary_color, 1px solid, 20px);
 }
-h1, h3, p, .suscribebutton {
-    color: #19929A
+.selectionbutton {
+    @include button_style($tertiary_color, 1px solid, 20px);
 }
+
+

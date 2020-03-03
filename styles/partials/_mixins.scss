@@ -1,6 +1,10 @@
-@mixin border-radius() {
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    border-radius: 7px;
-  }
+@mixin font_type($fontfamily, $color, $size) {
+  font-family: $fontfamily;
+  color: $color;
+  font-size: $size;
+}
+@mixin button_style($bgcolor, $borderstyle, $radius) {
+  background-color: $bgcolor;
+  border: $borderstyle;
+  border-radius: $radius;
+}

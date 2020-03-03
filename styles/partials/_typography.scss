@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto&display=swap');
+
+$Primary_font:'Roboto', sans-serif;
+$Secondary_font: 'PT Sans Narrow', sans-serif;
+
+h1 {
+    @include font_type($Primary_font, #19929A, 2em);
+}
+h2 {
+    @include font_type($Secondary_font, #19929A, 1.5em)
+}
+p { @include font_type($Secondary_font, #19929A, 1.1em)
+
+}
