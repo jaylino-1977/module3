@@ -4,11 +4,33 @@ $Primary_font:'Roboto', sans-serif;
 $Secondary_font: 'PT Sans Narrow', sans-serif;
 
 h1 {
-    @include font_type($Primary_font, #19929A, 2em);
+    @include font_type($Primary_font, #19929A, 1.8em);
 }
 h2 {
-    @include font_type($Secondary_font, #19929A, 1.5em)
+    @include font_type($Secondary_font, #19929A, 1.4em);
 }
-p { @include font_type($Secondary_font, #19929A, 1.1em)
-
+h3 {
+    @include font_type($Secondary_font, white, 1.2em);
+    font-weight: lighter;
+}
+.helpbutton {
+    @include font_type($Secondary_font, white, .9em);
+    font-weight: lighter;
+}
+p { @include font_type($Secondary_font, #19929A, 1.1em);
+}
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+.actionbutton {
+    @include font_type($Primary_font, #19929A, .8em);
+    font-weight: lighter;
+}
+.aboutusbutton {
+    @include font_type($Primary_font, #FDC079, .8em);
+}
+footer p {
+    color: white;
+    display: flex;
+    flex-direction: column;
 }

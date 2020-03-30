@@ -6,11 +6,8 @@ $tertiary_color:  #FDC079;
 nav, .subscribeBox { 
     background-color: $primary_color;
 }
-.HeroButton, .sendbutton {
-    @include button_style($secondary_color, 1px solid, 20px);
-}
-.selectionbutton {
-    @include button_style($tertiary_color, 1px solid, 20px);
-}
 
+footer {
+    background-color: $secondary_color;
+}
 

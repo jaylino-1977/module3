@@ -3,15 +3,197 @@
 @import './partials/mixins';
 @import './partials/typography';
 
-
-
-nav {
-    height: 50px;
+* {
+    text-align: center;
+}
+.main {
     width: 100%;
-    background-color: #F8EEDD;
+    height: auto;
+}
+.navbar {
+    background-color: #F8EEDD; 
+    width: 100%;
+    height: auto;
+
+    img {
+        display: flex;
+        justify-content: left; 
+    }
 }
 
+.heroimage {
+    display: flex;
+    flex-direction: column;
+    height:40vh;
+    margin-top: 0px;
+    background-image: url(/assets/images/amy-hirschi-JaoVGh5aJ3E-unsplash.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
 
+    h1 {
+        color: white;
+        font-weight: lighter;
+        font-size: 1.6em;
+        padding-top:100px;
+    }
+    .actionbutton {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        color: white;
+    }
+}
+.actionbutton {
+    width: 150px;
+    height: 40px;
+    background-color:#19929A;
+    margin: 0px auto 0px auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    line-height: 40px;
+    }
+.actionbutton:hover {
+    background-color: rgba(238, 238, 238, 0.8);
+
+}
+.aboutusbutton {
+    width: 150px;
+    height: 40px;
+    background-color:#FDC079;
+    margin: 0px auto 0px auto;
+    border-radius: 10px;
+    color: white;
+    line-height: 40px;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background-color: #FDC079;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.helpAreas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    h3 {
+        color:#19929A;
+    }
+}
+.helpbox {
+    width: 40%;
+    height: auto;
+}
+.helpbutton {
+    width: 100px;
+    height: 30px;
+    background-color:#FDC079;
+    margin: 0px auto 20px auto;
+    border-radius: 8px;
+    color: white;
+    line-height: 32px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subscribe {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    background-color: #F8EEDD;
+}
+textarea {
+    width: 80%;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+    line-height: 40px;
+}
+.successstory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    background-image: url(/assets/images/austin-distel-7uoMmzPd2JA-unsplash.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    h2, h3 {
+        text-align: left;
+        padding-left: 30px;
+        color: white;
+    }
+    h3 {
+        width: 70%;
+    }
+    .actionbutton {
+        width: 120px;
+        height: 30px;
+        margin-left: 30px;
+        margin-top: -15px;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+}
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px 30px 0px;
+
+    p {
+        width: 80%;
+        margin: 0px auto 0px auto;
+        line-height: 25px;
+        padding: 10px 0px 30px 0px;
+    }
+}
+.copyright {
+    font-size: .8em;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #FDC079;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #FDC079;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #FDC079;
+    color: white;
+  }
+  .fa-instagram {
+    background: #FDC079;
+    color: white;
+  }
+footer {
+    width: 100%;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+}
 
 
 
@@ -19,10 +201,65 @@ nav {
 
 //Screen Sizes
 
-@media (min-width: 768px) {
-
-}
-
 @media (min-width: 1024px) {
+    
+    .heroimage {
+        background-size: 70%;
+        background-color: #19929A;
 
+        h1 {
+            padding-top: 230px;
+            font-size: 1.7em;
+        }
+        
+    }
+    .helpAreas {
+        padding-top: 30px;
+        
+
+        h2, h3 {
+            color:#19929A;
+            font-size: 1.8em;
+        }
+    }
+    .subscribe h2 {
+        font-size: 1.8em;
+    }
+    .successstory {
+        background-size: 70%;
+        background-color: #19929A;
+    
+        h2, h3 {
+            text-align: left;
+            padding-left: 170px;
+            color: white;
+        }
+        h2 {
+            font-size: 1.9em;
+            margin-top: 90px;
+        }
+        h3 {
+            font-size: 1.7em;
+            width: 40%;
+        }
+
+        .actionbutton {
+            width: 150px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: -15px;
+            line-height: 30px;
+            border-radius: 5px;
+        }
+    }
+    .aboutus {
+        p {
+            width: 60%;
+            margin: 0px auto 0px auto;
+            line-height: 25px;
+            padding: 10px 0px 30px 0px;
+            font-size: 1.7em;
+            line-height: 50px;
+        }
+    }
 }
