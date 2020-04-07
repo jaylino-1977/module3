@@ -24,9 +24,9 @@
 .heroimage {
     display: flex;
     flex-direction: column;
-    height:40vh;
+    height: auto;
     margin-top: 0px;
-    background-image: url(/assets/images/amy-hirschi-JaoVGh5aJ3E-unsplash.png);
+    background-image: url(../assets/images/amy-hirschi-JaoVGh5aJ3E-unsplash.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -47,26 +47,33 @@
 .actionbutton {
     width: 150px;
     height: 40px;
-    background-color:#19929A;
-    margin: 0px auto 0px auto;
-    border-radius: 10px;
+    margin: 0px auto 20px auto;
+    border-radius: 5px;
+    background-color: #19929A;
     border: 1px solid white;
     color: white;
     line-height: 40px;
+    box-shadow: inset 0 0 0 0 #aaaaaa;
+    transition: ease-out 0.4s;
     }
-.actionbutton:hover {
-    background-color: rgba(238, 238, 238, 0.8);
-
-}
+   .actionbutton:hover {
+    box-shadow: inset 150px 0 0 0 #FDC079;
+   } 
+    
 .aboutusbutton {
     width: 150px;
     height: 40px;
     background-color:#FDC079;
     margin: 0px auto 0px auto;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     line-height: 40px;
+    box-shadow: inset 0 0 0 0 #aaaaaa;
+    transition: ease-out 0.4s;
 }
+.aboutusbutton:hover {
+    box-shadow: inset 150px 0 0 0 #19929A;
+   } 
 
 .divider {
     width: 80%;
@@ -97,15 +104,36 @@
     height: 30px;
     background-color:#FDC079;
     margin: 0px auto 20px auto;
-    border-radius: 8px;
+    border-radius: 5px;
     color: white;
     line-height: 32px;
+    box-shadow: inset 0 0 0 0 #aaaaaa;
+    transition: ease-out 0.4s;
+}
+.helpbutton:hover{
+    box-shadow: inset 150px 0 0 0 #19929A;
 }
 .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.rotate {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px auto 0px auto;
+    background-color: white;
+    animation: spinimage 4s infinite;
+}
+@keyframes spinimage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .subscribe {
     width: 100%;
@@ -123,8 +151,8 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40vh;
-    background-image: url(/assets/images/austin-distel-7uoMmzPd2JA-unsplash.png);
+    height: auto;
+    background-image: url(../assets/images/austin-distel-7uoMmzPd2JA-unsplash.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -144,7 +172,12 @@ textarea {
         margin-top: -15px;
         line-height: 30px;
         border-radius: 5px;
+        box-shadow: inset 0 0 0 0 #cccccc;
+        transition: ease-out 0.4s;
     }
+    .actionbutton:hover {
+        box-shadow: inset 150px 0 0 0 #FDC079;
+       } 
 }
 .aboutus {
     display: flex;
@@ -197,13 +230,12 @@ footer {
 
 
 
-
-
 //Screen Sizes
 
 @media (min-width: 1024px) {
     
     .heroimage {
+
         background-size: 70%;
         background-color: #19929A;
 
