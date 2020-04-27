@@ -8,44 +8,97 @@
     <meta name="keywords" content="HTML,CSS,Wedsite Design,Graphic Design,Responsive Design, Bootstrap">
     <link rel="stylesheet" type="text/css" href="styles/main.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Successful Lifestyles</title>
 </head>
 <body>
    <div class= "main">
        <header>
-            <div class= "navbar"><img src="assets/images/SuccessfulLIfestylesLogo-02.png" alt=""></div>
+        <nav class="navbar navbar-expand-lg bg-tertiary navbar-light">
+          <a class="navbar-brand" href="#"><img src="/assets/images/SuccessfulLIfestylesLogo-02.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Book Appointment</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Success Stories</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Contact</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Media</a>
+              </li>     
+            </ul>
+          </div>  
+        </nav>
             <div class= "heroimage">
                 <h1>Helping Individuals Maximize Their Talents and Skills</h1>
-                <div class= "actionbutton">Learn More</div>
+                <div class= "actionbutton slide_right">Learn More</div>
             </div>
        </header> 
         
        <section class= "helpAreas">
-            <h2>We Can Help You In Any of These Areas:</h2>
-            <div class="divider"></div>
-            <article class="boxes">
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Personal Growth & Leadership Development
-                </h3><div class="helpbutton">Get Started</div></div>
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Goal Setting & Life Planning</h3><br><div class="helpbutton">Get Started</div></div>
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Career & Lifestyle Development</h3><br><div class="helpbutton">Get Started</div></div>
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Health & Well-being & Lifestyle Management</h3><div class="helpbutton">Get Started</div></div>
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Consumer Education</h3><br><div class="helpbutton">Get Started</div></div>
-                <div class="helpbox"><img src="assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo"><h3>Parenting and Family Relationships</h3><div class="helpbutton">Get Started</div></div>
-            </article>
-        </section>
+        <h2>We Can Help You In Any of These Areas:</h2>
+        <div class="divider"></div>
+        <div class="row m-0">
+          <div class="col-md-4">
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+              <h3>Leadership Training</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+                <h3>Career Development</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>
+          </div>
+         <div class="col-md-4">
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+                <h3>Goal Setting</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+                <h3>Lifestyle Management</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>    
+          </div>
+          <div class="col-md-4">
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+              <h3>Consumer Education</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>
+              <div class="helpbox bg-light border border-primary rounded-lg"><img src="/assets/images/SuccessfulLIfestylesLogo-3.png" alt="Logo">
+                <h3>Family Relationships</h3><div class="helpbutton slide_right">Get Started</div>
+              </div>
+              
+          </div>
+      </div>
+    </section>
         
         <section class= "subscribe"><h2>Subscribe To Our Newsletter</h2>
                 <form>
                     <textarea>Enter Your Email </textarea>
-                <div class= "actionbutton">Send</div>
+                <div class= "actionbutton slide_right">Send</div>
                 </form>
         </section>
-        <section class= "successstory">
+        <section class= "row m-0">
+                <div class="col-md-6 bg-secondary">
+                  <div class="successText">
                     <h2>Success Story From Rags To Riches<br>
                     John Paris</h2>
                     <h3>"With the help of Successful Lifestyles I was able to find and maximize my 
                         talents and skills and go from rags to riches"</h3>
-                        <div class="actionbutton">Read More</div>
+                        <div class="actionbutton slide_right">Read More</div>
+                      </div>
+                </div>
+                <div class="col-md-6 bg-secondary"> 
+                  <div class="successImage"><img src="./assets/images/johnparis.jpg" alt="John Paris"></div>
+                </div>
         </section>
         <section class="aboutus"><h2>About Us</h2>
             <div class="divider"></div>
@@ -54,7 +107,7 @@
                 and Spanish to help individuals realize their potential to lead healthy, happy and successful live where
                 material and human resources are managed productively. 
             </p>
-            <div class="aboutusbutton">Read More</div>
+            <div class="actionbutton slide_right">Read More</div>
         </section>
        <footer>
            <p>Home</p><p>About</p> <p>Contact Us</p> <p>Booking</p> <p>Blog</p>
@@ -65,5 +118,8 @@
            <p class="copyright">Copyright 2020 Successful Lifestyles. All rights reserved.</p>
        </footer>
    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
