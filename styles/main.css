@@ -11413,6 +11413,7 @@ a.text-tertiary:hover, a.text-tertiary:focus {
 .heroimage .actionbutton {
   width: 120px;
   height: 30px;
+  cursor: pointer;
   margin-bottom: 50px;
   line-height: 30px;
   color: white;
@@ -11692,6 +11693,10 @@ footer {
   width: 100%;
   height: auto;
   padding: 10px 0px 10px 0px;
+}
+
+.largerText {
+  font-size: 3.5em;
 }
 
 @media (max-width: 940px) {
