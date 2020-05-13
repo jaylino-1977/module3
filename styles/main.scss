@@ -20,13 +20,25 @@
         justify-content: left; 
     }
 }
+<<<<<<< Updated upstream
 
+=======
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 $secondary_color;
+  }
+>>>>>>> Stashed changes
 .heroimage {
     display: flex;
     flex-direction: column;
     height:40vh;
     margin-top: 0px;
+<<<<<<< Updated upstream
     background-image: url(/assets/images/amy-hirschi-JaoVGh5aJ3E-unsplash.png);
+=======
+    background-image:url("../assets/images/personalmeeting.jpg");
+    background-position:top;
+    background-repeat: no-repeat;
+>>>>>>> Stashed changes
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -42,7 +54,18 @@
         height: 30px;
         line-height: 30px;
         color: white;
+<<<<<<< Updated upstream
     }
+=======
+        box-shadow: inset 0 0 0 0 $tertiary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 $tertiary_color;
+      }
+>>>>>>> Stashed changes
 }
 .actionbutton {
     width: 150px;
@@ -53,6 +76,13 @@
     border: 1px solid white;
     color: white;
     line-height: 40px;
+<<<<<<< Updated upstream
+=======
+    box-shadow: inset 0 0 0 0 $tertiary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+>>>>>>> Stashed changes
     }
 .actionbutton:hover {
     background-color: rgba(238, 238, 238, 0.8);
@@ -61,7 +91,7 @@
 .aboutusbutton {
     width: 150px;
     height: 40px;
-    background-color:#FDC079;
+    background-color:$tertiary_color;
     margin: 0px auto 0px auto;
     border-radius: 10px;
     color: white;
@@ -71,7 +101,7 @@
 .divider {
     width: 80%;
     height: 2px;
-    background-color: #FDC079;
+    background-color: $tertiary_color;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -85,7 +115,7 @@
     height: auto;
 
     h3 {
-        color:#19929A;
+        color:$secondary_color;
     }
 }
 .helpbox {
@@ -95,11 +125,18 @@
 .helpbutton {
     width: 100px;
     height: 30px;
-    background-color:#FDC079;
+    background-color:$tertiary_color;
     margin: 0px auto 20px auto;
     border-radius: 8px;
     color: white;
     line-height: 32px;
+<<<<<<< Updated upstream
+=======
+    box-shadow: inset 0 0 0 0 $secondary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+>>>>>>> Stashed changes
 }
 .boxes {
     display: flex;
@@ -112,6 +149,23 @@
     height: auto;
     padding: 20px 0px 20px 0px;
     background-color: #F8EEDD;
+<<<<<<< Updated upstream
+=======
+
+    .actionbutton {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        box-shadow: inset 0 0 0 0 $tertiary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 $tertiary_color;
+      }
+>>>>>>> Stashed changes
 }
 textarea {
     width: 80%;
@@ -138,12 +192,37 @@ textarea {
         width: 70%;
     }
     .actionbutton {
+<<<<<<< Updated upstream
         width: 120px;
         height: 30px;
         margin-left: 30px;
         margin-top: -15px;
         line-height: 30px;
         border-radius: 5px;
+=======
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        margin-bottom: 40px;
+        box-shadow: inset 0 0 0 0 $tertiary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 $tertiary_color;
+      }
+}
+
+.successImage {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+>>>>>>> Stashed changes
     }
 }
 .aboutus {
@@ -159,6 +238,22 @@ textarea {
         line-height: 25px;
         padding: 10px 0px 30px 0px;
     }
+<<<<<<< Updated upstream
+=======
+    .aboutusbutton {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        box-shadow: inset 0 0 0 0 $tertiary_color;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 $tertiary_color;
+      }
+>>>>>>> Stashed changes
 }
 .copyright {
     font-size: .8em;
@@ -173,20 +268,20 @@ textarea {
     border-radius: 50%;
   }
   .fa-facebook {
-    background: #FDC079;
+    background: $tertiary_color;
     color: white;
   }
   
   .fa-twitter {
-    background: #FDC079;
+    background: $tertiary_color;
     color: white;
   }
   .fa-linkedin {
-    background: #FDC079;
+    background: $tertiary_color;
     color: white;
   }
   .fa-instagram {
-    background: #FDC079;
+    background: $tertiary_color9;
     color: white;
   }
 footer {
@@ -195,17 +290,69 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 
+<<<<<<< Updated upstream
+=======
+.largerText {
+    font-size: 2.5em;
+}
+/*************************Email Popup Window************************************/
+>>>>>>> Stashed changes
+
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#26262c;
+    display:none;
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:300px;
+    display:none;
+    z-index:9999;
+    padding:0px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:20%; 
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    background-color:#ffffff;
+    font-size: 1.1em;
+    margin: 0px;
+  }
+  
+  .agree:hover{
+    background-color: #D1D1D1;
+  }
+  .popupoption:hover{
+   background-color:#D1D1D1;
+   color: green;
+  }
+  .popupoption2:hover{
+   color: red;
+  }
+  
 
 
 
-
-//Screen Sizes
+//Screen Sizes*****************************************/
 
 @media (min-width: 1024px) {
     
     .heroimage {
+<<<<<<< Updated upstream
         background-size: 70%;
         background-color: #19929A;
+=======
+        background-size: 100%;
+        background-color: $secondary_color;
+>>>>>>> Stashed changes
 
         h1 {
             padding-top: 230px;
@@ -227,7 +374,7 @@ footer {
     }
     .successstory {
         background-size: 70%;
-        background-color: #19929A;
+        background-color: $secondary_color;
     
         h2, h3 {
             text-align: left;
