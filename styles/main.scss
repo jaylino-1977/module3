@@ -3,12 +3,28 @@
 @import './partials/mixins';
 @import './partials/typography';
 
+@import "./scss/functions";
+@import "./scss/variables";
+@import "./scss/mixins";
+
+$theme-colors: (
+  "primary": #19929A,
+  "secondary": #FDC079,
+  "tertiary":#F8EEDD,
+);
+
+
+@import "./scss/bootstrap";
+
+
 * {
     text-align: center;
 }
 .main {
     width: 100%;
     height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 .navbar {
     background-color: #F8EEDD; 
@@ -20,16 +36,19 @@
         justify-content: left; 
     }
 }
-
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #19929A;
+  }
 .heroimage {
     display: flex;
     flex-direction: column;
-    height:40vh;
+    height:60vh;
     margin-top: 0px;
-    background-image: url(/assets/images/amy-hirschi-JaoVGh5aJ3E-unsplash.png);
-    background-size: 100%;
+    background-image:url("/assets/images/personalmeeting.jpg");
+    background-position:top;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-size: 100%;
+
 
     h1 {
         color: white;
@@ -40,9 +59,18 @@
     .actionbutton {
         width: 120px;
         height: 30px;
+        cursor:pointer;
+        margin-bottom: 50px;
         line-height: 30px;
         color: white;
+        box-shadow: inset 0 0 0 0 #FDC079;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
     }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 #FDC079;
+      }
 }
 .actionbutton {
     width: 150px;
@@ -53,11 +81,14 @@
     border: 1px solid white;
     color: white;
     line-height: 40px;
+    box-shadow: inset 0 0 0 0 #FDC079;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
     }
-.actionbutton:hover {
-    background-color: rgba(238, 238, 238, 0.8);
 
-}
+
+
 .aboutusbutton {
     width: 150px;
     height: 40px;
@@ -83,14 +114,21 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    margin: 30px 0px 30px 0px;
 
     h3 {
         color:#19929A;
     }
 }
 .helpbox {
-    width: 40%;
-    height: auto;
+    width: 250px;
+    margin:0px auto 0px auto;
+    height: 230px;
+    margin-bottom: 20px;
+
+    img {
+        padding-top: 20px;
+    }
 }
 .helpbutton {
     width: 100px;
@@ -100,6 +138,10 @@
     border-radius: 8px;
     color: white;
     line-height: 32px;
+    box-shadow: inset 0 0 0 0 #19929A;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
 }
 .boxes {
     display: flex;
@@ -110,8 +152,22 @@
 .subscribe {
     width: 100%;
     height: auto;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
     background-color: #F8EEDD;
+
+    .actionbutton {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        box-shadow: inset 0 0 0 0 #FDC079;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 #FDC079;
+      }
 }
 textarea {
     width: 80%;
@@ -124,10 +180,7 @@ textarea {
     flex-direction: column;
     width: 100%;
     height: 40vh;
-    background-image: url(/assets/images/austin-distel-7uoMmzPd2JA-unsplash.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: center;
+    
 
     h2, h3 {
         text-align: left;
@@ -137,13 +190,43 @@ textarea {
     h3 {
         width: 70%;
     }
+    
+}
+.successText {
+    width: 100%;
+    height: auto;
+   
+    h2 {
+        font-size: 2em;
+        margin: 70px 0px 30px 0px;
+    }
+    h3 {
+        width: 70%;
+        margin: 0px auto 30px auto;
+    }
     .actionbutton {
-        width: 120px;
-        height: 30px;
-        margin-left: 30px;
-        margin-top: -15px;
-        line-height: 30px;
-        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        margin-bottom: 40px;
+        box-shadow: inset 0 0 0 0 #FDC079;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 #FDC079;
+      }
+}
+
+.successImage {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 .aboutus {
@@ -151,7 +234,7 @@ textarea {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 5px 0px 30px 0px;
+    margin: 50px 0px 50px 0px;
 
     p {
         width: 80%;
@@ -159,14 +242,28 @@ textarea {
         line-height: 25px;
         padding: 10px 0px 30px 0px;
     }
+    .aboutusbutton {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        box-shadow: inset 0 0 0 0 #FDC079;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 #FDC079;
+      }
 }
 .copyright {
     font-size: .8em;
 }
 .fa {
-    padding: 10px;
+    padding: 12px;
     font-size: 30px;
-    width: 20px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -195,16 +292,25 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 
+.largerText {
+    font-size: 3.5em;
+}
 
 
 
 
 //Screen Sizes
 
+@media (max-width: 940px) {
+    .heroimage {
+        height: 100%;
+    }
+}
+
 @media (min-width: 1024px) {
     
     .heroimage {
-        background-size: 70%;
+        background-size: 100%;
         background-color: #19929A;
 
         h1 {
@@ -235,7 +341,7 @@ footer {
             color: white;
         }
         h2 {
-            font-size: 1.9em;
+            font-size: 2.1em;
             margin-top: 90px;
         }
         h3 {
